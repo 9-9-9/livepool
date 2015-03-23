@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'd:\\Tools\\Node.js\\node.exe',
+1 verbose cli   'd:\\Tools\\Node.js\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'livepool',
+1 verbose cli   '-g' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 silly cache add args [ 'livepool', null ]
+5 verbose cache add spec livepool
+6 silly cache add parsed spec { raw: 'livepool',
+6 silly cache add   scope: null,
+6 silly cache add   name: 'livepool',
+6 silly cache add   rawSpec: '',
+6 silly cache add   spec: '*',
+6 silly cache add   type: 'range' }
+7 verbose addNamed livepool@*
+8 silly addNamed semver.valid null
+9 silly addNamed semver.validRange *
+10 silly addNameRange { name: 'livepool', range: '*', hasData: false }
+11 silly mapToRegistry name livepool
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/livepool
+15 verbose addNameRange registry:https://registry.npmjs.org/livepool not in flight; fetching
+16 verbose request uri https://registry.npmjs.org/livepool
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 16:56:39
+19 verbose request id e0ade8d36803c6fd
+20 http request GET https://registry.npmjs.org/livepool
+21 http 200 https://registry.npmjs.org/livepool
+22 silly get cb [ 200,
+22 silly get   { date: 'Mon, 23 Mar 2015 08:56:43 GMT',
+22 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"CEYUBX563YAKV5V38L6418UBP"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'cache-control': 'max-age=60',
+22 silly get     'content-length': '20568',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     'x-served-by': 'cache-nrt6123-NRT',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1427101002.991552,VS0,VE706',
+22 silly get     vary: 'Accept',
+22 silly get     'keep-alive': 'timeout=10, max=50',
+22 silly get     connection: 'Keep-Alive' } ]
+23 verbose get saving livepool to C:\Users\Administrator\AppData\Roaming\npm-cache\registry.npmjs.org\livepool\.cache.json
+24 silly addNameRange number 2 { name: 'livepool', range: '*', hasData: true }
+25 silly addNameRange versions [ 'livepool',
+25 silly addNameRange   [ '0.0.1',
+25 silly addNameRange     '0.6.1',
+25 silly addNameRange     '0.6.6',
+25 silly addNameRange     '0.6.9',
+25 silly addNameRange     '0.7.3',
+25 silly addNameRange     '0.7.4',
+25 silly addNameRange     '0.7.5',
+25 silly addNameRange     '0.7.6',
+25 silly addNameRange     '0.7.7',
+25 silly addNameRange     '0.7.9' ] ]
+26 verbose addNamed livepool@0.7.9
+27 silly addNamed semver.valid 0.7.9
+28 silly addNamed semver.validRange 0.7.9
+29 silly mapToRegistry name livepool
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/livepool
+33 verbose addRemoteTarball https://registry.npmjs.org/livepool/-/livepool-0.7.9.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/livepool/-/livepool-0.7.9.tgz',
+34 verbose addRemoteTarball   '74f81970c53304ff599633046d89f8fe72762de0' ]
+35 info retry fetch attempt 1 at 16:56:42
+36 info attempt registry request try #1 at 16:56:42
+37 http fetch GET https://registry.npmjs.org/livepool/-/livepool-0.7.9.tgz
+38 http fetch 200 https://registry.npmjs.org/livepool/-/livepool-0.7.9.tgz
+39 silly fetchAndShaCheck shasum 74f81970c53304ff599633046d89f8fe72762de0
+40 verbose stack Error: shasum check failed for C:\Users\ADMINI~1\AppData\Local\Temp\npm-4596-a3d7c80f\registry.npmjs.org\livepool\-\livepool-0.7.9.tgz
+40 verbose stack Expected: 74f81970c53304ff599633046d89f8fe72762de0
+40 verbose stack Actual:   3d6415fd3b7d323a0fc0b6ece52e9011fb76b680
+40 verbose stack From:     https://registry.npmjs.org/livepool/-/livepool-0.7.9.tgz
+40 verbose stack     at d:\Tools\Node.js\node_modules\npm\node_modules\sha\index.js:38:8
+40 verbose stack     at ReadStream.<anonymous> (d:\Tools\Node.js\node_modules\npm\node_modules\sha\index.js:85:7)
+40 verbose stack     at ReadStream.emit (events.js:129:20)
+40 verbose stack     at _stream_readable.js:908:16
+40 verbose stack     at process._tickCallback (node.js:355:11)
+41 verbose cwd g:\localhost8888\livepool
+42 error Windows_NT 6.1.7601
+43 error argv "d:\\Tools\\Node.js\\node.exe" "d:\\Tools\\Node.js\\node_modules\\npm\\bin\\npm-cli.js" "install" "livepool" "-g"
+44 error node v0.12.0
+45 error npm  v2.5.1
+46 error shasum check failed for C:\Users\ADMINI~1\AppData\Local\Temp\npm-4596-a3d7c80f\registry.npmjs.org\livepool\-\livepool-0.7.9.tgz
+46 error Expected: 74f81970c53304ff599633046d89f8fe72762de0
+46 error Actual:   3d6415fd3b7d323a0fc0b6ece52e9011fb76b680
+46 error From:     https://registry.npmjs.org/livepool/-/livepool-0.7.9.tgz
+47 error If you need help, you may report this error at:
+47 error     <http://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
